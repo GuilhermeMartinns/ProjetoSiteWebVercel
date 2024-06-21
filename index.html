@@ -11,15 +11,15 @@
 <body>
     <header>
         <div class="navbar">
-            <div class="logo"><a href="index.html"><img src= "Imagens\LogoLiviaSite.svg"></a></div>
+            <div class="logo"><a href="index.html"><img class="logo_imagem" src= "Imagens\LogoLiviaSite.svg"></a></div>
             <ul class = "links">
                 <li><a href="sobre.html">Sobre Nós</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 
             </ul>
-            <li><a href="agendar.html" class="action_btn">Agendar Consulta</a></li>
-            <div class=""toggle_btn>
+            <div><a href="agendar.html" class="action_btn">Agendar Consulta</a></div>
+            <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
@@ -34,25 +34,16 @@
 
     </header>
 
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-
-        toggleBtn.onclick = function (){
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
+    <script src="./index.js">
+       
     </script>
 
     
     <div class="foto">
         <p>Conquiste a pele dos sonhos com nossos <br>tratamentos especializados</p>
-        <img src="Imagens\LavieenPDRN.png" width="600" alt="Retrato de Mulher">
+        <div class="container-foto-muie">
+            <img class="foto-Muie" src="Imagens\LavieenPDRN.png" alt="Retrato de Mulher">
+        </div>
     </div>
     
 </body>
