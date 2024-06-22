@@ -25,6 +25,7 @@ a{
 
 a:hover{
     color: rgb(236, 2, 107);
+    transition: 0.2s ease;
 }
 
 /*HEADER*/
@@ -38,7 +39,7 @@ a:hover{
     align-items: center;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.70);
-    padding: 0 150px;
+    padding: 50px 300px;
     
 }
 
@@ -50,7 +51,6 @@ a:hover{
 }
 
 .navbar .logo{
-    
     width: 200px;
     height:100px;
 }
@@ -114,7 +114,7 @@ a:hover{
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 1);
     
     border-radius: 10px;
     overflow: hidden;
@@ -150,24 +150,55 @@ h1{
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 50px;
+
+}
+
+.foto p{
+    position: relative;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bold;
+    padding-bottom: 20px;
 
 }
 
 .container-foto-muie{
-    width: 500px;
+    width: auto;
     height:500px;
+    margin: 0 auto;
 }
 
 .foto-Muie{
     width: auto;
-    height: 500px;
+    height: 700px;
 
 }
 
 .sobre{
     text-align: center;
     padding-top: 20px;
-    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.sobre .container-sobre{
+    position: relative;
+    
+}
+
+.sobre p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bold;
+    font-size: 1.5rem;
 }
 
 .contato{
@@ -177,10 +208,25 @@ h1{
 }
 
 .nossos_servicos{
-    text-align: center;
-    padding-top: 20px;
-    font-size: 2rem;
+    display:block;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
 
+}
+
+
+.nossos_servicos p{
+    padding: 20px;
+    font-size: 1.2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.agendar-consulta{
+    text-align: center;
+    padding: 10px;
 }
 
 /* RESPONSIVIDADE*/
@@ -198,6 +244,100 @@ h1{
     .dropdown_menu{
         display: block;
     }
+
+    .navbar{
+        width:auto;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .logo{
+        position: absolute;
+        align-self:center;
+        padding-left: 100px;
+    }
+
+
+    .foto{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+
+    }
+    .foto p{
+        position: relative;
+        font-size: 1.5rem;
+        
+    }
+
+    .foto-Muie{
+        width: 20rem;
+        height: auto;
+    }
+}
+
+.nossos_servicos{
+    width: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.nossos_servicos p{
+    font-size: 1rem;
+}
+
+.nossos_servicos img{
+    width: 20rem;
+    height: auto;
+    justify-content: center;
+    
+}
+
+.sobre{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.sobre p{
+    font-size: 1rem;
+}
+
+.sobre img{
+    width: 20rem;
+    height: auto;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.contato img{
+    width: 20rem;
+}
+
+.agendar-consulta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.agendar-consulta img{
+    width: 20rem;
 }
 
 @media(max-width: 576px){
